@@ -5,14 +5,14 @@ from num2words import num2words
 from pydub import AudioSegment
 from telebot.types import InlineKeyboardButton as bt, InlineKeyboardMarkup as kp
 from kvsqlite.sync import Client
-ids = API_ID
+ids = os.environ.get("API_ID")
 db = Client("amo.sqlite")
 bot = TG_BOT_TOKEN
   
 if not db.exists("myNums"):
     aa = db.set("myNums", 124)
 aa = db.set("status", False)
-idch = ID
+idch = os.environ.get("ID")
 a = bot.get_chat(idch)
 print(a)
 def get_ayah(num: int) -> str:
