@@ -1,0 +1,49 @@
+
+{
+  "name": "Cat M Bot",
+  "logo": "https://telegra.ph/file/28a4b1d6bc4fdc263b7bc.jpg",
+  "description": "Cat M Eassiest Account Manager Bot!",
+  "keywords": [
+    "mailer",
+    "best",
+    "account",
+    "manager",
+    "3"
+  ],
+  "repository": "https://github.com/alilio313/ali",
+  "env": {
+    "ENV": {
+      "description": "لا تغيــرهــا",
+      "value": "ANYTHING"
+    },
+    "TG_BOT_TOKEN": {
+      "description": "تـوكــن البــوت",
+      "value": ""
+    },
+    "API_ID": {
+        "description": "ايدي حسابك",
+        "value": ""
+    },
+    "ID": {
+        "description": "ايدي كروبك",
+        "value": ""
+    },
+    
+    
+ "API_HASH": {
+        "description": "لا تغيــرهــا",
+        "value": "aff5c1ca99cc6c1c4177ca5a362cca1a"
+    }
+  },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "basic"
+        }
+    }
+}
