@@ -7,7 +7,7 @@ from telebot.types import InlineKeyboardButton as bt, InlineKeyboardMarkup as kp
 from kvsqlite.sync import Client
 ids = os.environ.get("API_ID")
 db = Client("amo.sqlite")
-bot = os.environ.get("TG_BOT_TOKEN")
+bot = TeleBot("TG_BOT_TOKEN")
   
 if not db.exists("myNums"):
     aa = db.set("myNums", 124)
