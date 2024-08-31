@@ -1,3 +1,4 @@
+kvsqlite
 pydub
 num2words
 telebot
