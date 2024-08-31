@@ -1,3 +1,4 @@
+pydub
 num2words
 telebot
 catway
